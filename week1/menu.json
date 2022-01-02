@@ -1,0 +1,67 @@
+{"menu": [
+    {
+        "appetizers":[{
+            "item": "Potato Chips",
+            "ingrediesnts": "Fried Potatoes",
+            "description": "Sliced potatoes fried to perfection"
+            },
+
+            {
+            "item": "Potato Wedges",
+            "ingrediesnts":"Fried Potatoes",
+            "description": "Potatoes cut into wedges and then fried to greatness"
+            }
+        ]
+    },
+
+    {
+        "cold sandwhiches":[{
+            "item": "Club Sandwhich",
+            "ingredients": ["cheese", "bacon", "ham", "turkey", "mayo"],
+            "description": "Bacon sizzled to perfection nestled on top of turkey, ham, and provolone"
+            },
+
+            {
+            "item": "BLT",
+            "ingredients": ["bacon", "lettuce", "tomato"],
+            "description": "Freshley grilled bacon, iceberg lettuce and perfectly ripe tomatoes"
+            }
+        ]
+
+    },
+
+    {
+        "hot sandwhiches":[{
+            "item": "Bacon Ranch Chicken Cheese Steak",
+            "ingredients": ["bacon", "lettuce", "cheese", "ranch"],
+            "description": "Perfectly grilled chicken covered with cheese, then stacked with lettuce, tomato, and bacon. Topped off with our ranch dressing"
+        },
+        {
+            "item": "Philly Cheese Steak",
+            "ingredients": ["grilled steak", "grilled onions", "grilled peppers", "cheese"],
+            "description": "Everything grilled fresh to order, fan favorite!"
+        }]
+    },
+
+    {
+        "desserts":[{
+            "item": "Brownie",
+            "description": "Gooey chocolate chip brownies"
+        },
+        {
+            "item": "Cookie",
+            "description": "Fresh baked chocolate chip cookies"
+        }]
+    },
+
+    {
+        "drinks":[{
+            "item": "Fountain Drink",
+            "description": "Your favorite Pepsi products, self served"
+        },
+        {
+            "item": "Juice",
+            "description": "Freshley squeezed orange juice"
+        }]
+    }
+]}
