@@ -384,7 +384,8 @@ var breweries = [
 var breweryList = document.getElementById("breweries");
 
 for (var i = 0; i < breweries.length; i++){    
-    var newName = document.createElement("li");
+    let newName = document.createElement("li");
+
     newName.textContent = breweries[i];
-    breweryList.append(newName);
+    breweryList.appendChild(newName);
 }
