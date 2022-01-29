@@ -14,3 +14,7 @@ ol {
     font-size: 20px;
     color: cornsilk
 }
+
+.item-complete{
+    text-decoration: line-through;
+}
