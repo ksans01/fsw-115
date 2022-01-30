@@ -5,12 +5,22 @@
         <title>To-do List</title>
     </head>
     <body>
+        <form id='listForm'>
+            <label>Title</label>
+            <input type='text' id='listTitleInput'/>
+            <label>Description</label>
+            <input type='text' id='listDescriptionInput'/>
+            <label>Price</label>
+            <input type='text' id='listPriceInput'/>
+            <label>Is Complete?</label>
+            <input type='checkbox' id='listCompletedInput'/>
+            <button>Submit</button>
+        </form>
+
         <div id="myDiv" class="header">
-            <h1>My To Do List</h1>
-
+            <h1>My To Do List</h1>                
         </div>
-
-
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js" integrity="sha512-/Q6t3CASm04EliI1QyIDAA/nDo9R8FQ/BULoUFyN4n/BDdyIxeH7u++Z+eobdmr11gG5D/6nPFyDlnisDwhpYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="index.js"></script>
     </body>
