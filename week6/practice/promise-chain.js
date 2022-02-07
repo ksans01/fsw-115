@@ -1,30 +1,30 @@
 // Promise Chaining
 // url: https://swapi.dev/api/people/1
 
-// const getData = () => {
-//     axios.get('https://swapi.dev/api/people/1')
+const getData = () => {
+    axios.get('https://swapi.dev/api/people/1')
 
-//     .then(res => {
-//         const homeworldUrl = res.data.homeworld
-//         console.log(homeworldUrl)
-//         return axios.get(homeworldUrl)
-//     })
-//     .then(response => {
-//         const film1 = response.data.films[0]
-//         console.log(film1)
-//         return axios.get(film1)
-//     })
-//     .then(res => axios.get(res.data.species[1]))
-//     .then(response => console.log(response.data.name))
-//     .catch(err => console.log(err))
-// }
+    .then(res => {
+        const homeworldUrl = res.data.homeworld
+        console.log(homeworldUrl)
+        return axios.get(homeworldUrl)
+    })
+    .then(response => {
+        const film1 = response.data.films[0]
+        console.log(film1)
+        return axios.get(film1)
+    })
+    .then(res => axios.get(res.data.species[1]))
+    .then(response => console.log(response.data.name))
+    .catch(err => console.log(err))
+}
 
-// getData()
+getData()
 
 
 // Async - Await
 
-const getData = async () => {
+const getData1 = async () => {
     let response, homeworld, film
     try{
         response = await axios.get('https://swapi.dev/api/people/1')
@@ -37,7 +37,7 @@ const getData = async () => {
     }
 }
 
-getData()
+getData1()
 
 function displayDataToDom(response, homeworld, film){
     console.log(response.data.name)
@@ -56,7 +56,7 @@ function displayDataToDom(response, homeworld, film){
     document.body.appendChild(h2)
 }
 
-// Promise.all()
+// // Promise.all()
 
 async function getAllLukeMovies(){
     const lukeData = await axios.get("https://swapi.dev/api/people/1")
@@ -66,7 +66,6 @@ async function getAllLukeMovies(){
     for(let i = 0; i < lukeFilms.length; i++){
         pendingFilmsPromises.push(axios.get(lukeFilms[i]))
     }
-    // console.log(pendingFilmsPromises)
 
     Promise.all(pendingFilmsPromises)
     .then(res => console.log(res))
@@ -74,3 +73,12 @@ async function getAllLukeMovies(){
 }
 
 getAllLukeMovies()
+
+const data = () => {
+    fetch("https://swapi.dev/api/people")
+    .then(res => res.json())
+    .then(res => console.log(res))
+    .catch(err => console.log(err))
+}
+
+data()
