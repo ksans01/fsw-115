@@ -24,6 +24,10 @@ function displayStarWarsToDom(response, starShip, film){
     const movie = document.createElement('h2')
     movie.textContent = film.data.title
     document.querySelector('#starwars').appendChild(movie)
+
+    const quote = document.createElement('h3')
+    quote.textContent = `${response.data.name} likes to fly around in his ${starShip.data.name} in the movie "${film.data.title}"`
+    document.querySelector('#starwars').appendChild(quote)
 }
 getStarWarsData()
 
