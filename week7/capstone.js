@@ -109,8 +109,8 @@ const getStarWarsData = async () => {
         starShip = await axios.get(response.data.starships)
         film = await axios.get(starShip.data.films)
         displayStarWarsToDom(response, starShip, film)
-        console.log(response)
     }
+    
     catch(error){
         console.log(error)
     }
