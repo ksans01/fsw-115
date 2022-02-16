@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(0, 238, 255);
+}
+
+.header {
+    color: cornsilk;
+    display: grid;
+}
+
+ol {
+    background-color: rgb(97, 20, 220);
+    font-size: 20px;
+    color: rgb(247, 247, 247);
+    display: inline-block
+}
+
+.item-complete{
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+
+.todo-card {
+    border: 1px solid black;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    align-content: center;
+    align-items: center;
+    margin: 25px;
+    text-align: center;
+}
+
+#listForm {
+    color: rgb(26, 24, 17)
+}
+
+#listForm {
+    color: rgb(26, 24, 16)
+}

@@ -13,12 +13,6 @@ function flipCoin(){
     })
 }
 
-// flipCoin()
-//     .then(response => console.log("Resolved: " + response))
-//     .catch(error => console.log("Rejected: " + error))
-
-// Promise.resolve('something').then(response => console.log(response))
-
 function getData(){
     return new Promise(resolve => {
         setTimeout(() => resolve('hello world'), 3000)
